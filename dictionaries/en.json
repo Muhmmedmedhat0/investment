@@ -1,0 +1,74 @@
+{
+  "navigation": {
+    "home": "Home",
+    "whoWeAre": "Who We Are",
+    "fundDocuments": "Fund Documents",
+    "boardOfDirectors": "Board of Directors",
+    "fundAssets": "Fund Assets",
+    "news": "News",
+    "contactUs": "Contact Us"
+  },
+  "page": {
+    "home": {
+      "header": {
+        "heroText": "Investment and Brokerage Company",
+        "heroSpan": "Investment Capital",
+        "heroTitle": "Subscription to Eric REIT Investment Fund Starts",
+        "heroDate": "From July 10, 2023, to July 20, 2023",
+        "heroMoreText": "Banks receiving individual subscription",
+        "heroShowMore": "Discover More"
+      },
+      "about": {
+        "maintitle": "About the Fund",
+        "description": "The diversified Eric REIT investment fund is a closed real estate investment fund publicly traded on the main market. It complies with Islamic Sharia principles and was established in the Kingdom of Saudi Arabia under the regulations of real estate investment funds. The fund's portfolio consists of seven income-generating properties diversified by sector and location. The fund aims to achieve periodic rental income and distribute at least 90% of the net profits semi-annually.",
+        "subtitle": "Total Fund Size",
+        "title": "SAR 1,210,000,000",
+        "boxSubTitle": "Number of Real Estate Assets",
+        "boxSubTitle2": "7 Real Estate Assets",
+        "percentage": "Occupancy Rate",
+        "percentageNumber": "97%",
+        "cityNumers": "Number of Cities",
+        "cityNum": "5 Cities",
+        "sectorsNumbers": "Number of Sectors",
+        "sectorsNumber": "4 Sectors",
+        "profitPolicy": "Profit Distribution Policy",
+        "prfitRules": "The fund aims to distribute profits semi-annually"
+      },
+      "document": {
+        "title": "Fund Documents"
+      },
+      "statistics": {
+        "firstTitle": "Diverse Real Estate Portfolio Across Saudi Arabia",
+        "secondTitle": "Diverse Real Estate Portfolio Across Saudi Arabia",
+        "firstLabels": ["Riyadh", "Abha", "Khobar", "Dammam", "Jubail"],
+        "secondLabels": ["Hotel", "Logistics", "Commercial", "Office"]
+      },
+      "directors": {},
+      "funds": {},
+      "contact": {},
+      "footer": {
+        "about": "Investment and Brokerage Company 'Investment Capital'",
+        "about1": "Manager of the diversified Eric REIT investment fund.",
+        "about2": "A Saudi company licensed by the Capital Market Authority with license number (37-11156).",
+        "contact": "Contact Us",
+        "mail": "P.O. Box: 6888",
+        "location": "Riyadh: 11452",
+        "road": "King Fahad Subsidiary Road, Al Aqiq,",
+        "secondLocation": "13515 Riyadh",
+        "mail2": "IPO-REIT@icap.com.sa",
+        "phone": "0112547666",
+        "help": "Helpful Links",
+        "investment": "Ministry of Investment",
+        "money": "Capital Market Authority",
+        "trade": "Saudi Stock Exchange (Tadawul)",
+        "property": "General Authority for Real Estate",
+        "helpLinks": "Helpful Links",
+        "terms": "Terms of Use",
+        "responbility": "Disclaimer",
+        "secret": "Confidentiality and Security",
+        "rights": "All Rights Reserved ©",
+        "company": "Investment and Brokerage Company 'Investment Capital'"
+      }
+    }
+  }
+}
