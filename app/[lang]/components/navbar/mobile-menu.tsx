@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import LocaleSwitcher from '../locale-switcher';
+import LocaleSwitcher from './locale-switcher';
 // import { Locale } from '@/i18n/i18n-config';
 
 interface MobileMenuProps {

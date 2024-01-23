@@ -322,6 +322,8 @@ button {
 	backdrop-filter: blur(10px);
 	z-index: 10;
 	color: var(--clr-1);
+	margin: 0 20px;
+
 }
 .slider-arrows .arrow-btn.with-h{
 	top: calc((var(--img-dim) /2) - (var(--dim) / 2));

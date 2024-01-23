@@ -40,10 +40,54 @@
       "statistics": {
         "firstTitle": "Diverse Real Estate Portfolio Across Saudi Arabia",
         "secondTitle": "Diverse Real Estate Portfolio Across Saudi Arabia",
-        "firstLabels": ["Riyadh", "Abha", "Khobar", "Dammam", "Jubail"],
-        "secondLabels": ["Hotel", "Logistics", "Commercial", "Office"]
+        "firstLabels": [
+          "Riyadh",
+          "Abha",
+          "Khobar",
+          "Dammam",
+          "Jubail"
+        ],
+        "secondLabels": [
+          "Hotel",
+          "Logistics",
+          "Commercial",
+          "Office"
+        ]
       },
-      "directors": {},
+      "directors": {
+        "mainTitle": "Fund Board of Directors",
+        "directorsData": [
+          {
+            "name": "Khaled bin Abdulaziz Al-Reis",
+            "position": "Chairman of the Fund's Board of Directors",
+            "about": "Mr. Khaled is the Chief Executive Officer of Capital Investment Company.",
+            "bio": "Mr. Khaled is the Chief Executive Officer of Capital Investment Company. He has over 20 years of practical experience in the fields of investment banking, investment management, direct investments, and private equity. He holds a Master of Business Administration (MBA) and a Master's degree in Financial Sciences from the University of Denver, Colorado, USA. He is also a certified financial analyst.",
+            "image": "/img/directors/Khaled Alrayes.jpg"
+          },
+          {
+            "name": "Mohammed bin Mutuq Al-Jamid",
+            "position": "Member of the Fund's Board of Directors",
+            "about": "Mr. Mohammed is the Head of Real Estate Investment Operations at Capital Investment.",
+            "bio": "Mr. Mohammed is the Head of Real Estate Investment Operations at Capital Investment. He has over 20 years of practical experience in operations related to various investment products, including stock brokerage, bonds, initial public offerings, private equity, and real estate investment funds. He holds a diploma in banking operations from the Institute of Public Administration in Riyadh.",
+            "image": "/img/directors/Mohammed Aljamed.jpg"
+          },
+          {
+            "name": "Eng. Abdullah bin Abdul Karim Al-Mazrou",
+            "position": "Member of the Fund's Board of Directors",
+            "about": "Mr. Abdullah is the Chief Executive Officer of Al-Mutlaq Real Estate Investment Company.",
+            "bio": "Mr. Abdullah is the Chief Executive Officer of Al-Mutlaq Real Estate Investment Company. He has over 25 years of practical experience in facilities management and maintenance in the banking and telecommunications sectors. He holds a Bachelor's degree in Mechanical Engineering from King Saud University, in addition to obtaining various professional certifications and courses in project management and facilities management.",
+            "image": "/img/directors/Abduallah  Abdulkarem Almzarou.png"
+          },
+          {
+            "name": "Saleh bin Omar bin Hidara",
+            "position": "Member of the Fund's Board of Directors",
+            "about": "Mr. Saleh is the Chief Financial Officer at Al-Mutlaq Real Estate Investment Company.",
+            "bio": "Mr. Saleh is the Chief Financial Officer at Al-Mutlaq Real Estate Investment Company. He has over 15 years of practical experience in financial management and accounting in the real estate sector. He holds a Bachelor's degree in Accounting from the Arab Open University in Jordan, and has obtained various professional certificates and courses in accounting and financial management.",
+            "image": "/img/directors/Saleh Bin Hidarah.png"
+          }
+        ]
+        
+      },
       "funds": {},
       "contact": {},
       "footer": {
