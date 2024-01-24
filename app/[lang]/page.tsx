@@ -4,6 +4,7 @@ import About from "./components/about/about";
 import Document from "./components/document/document";
 import Statistics from "./components/statistics/statistics";
 import Directors from "./components/directors/directors";
+import Funds from "./components/funds/funds";
 
 
 export default function HomePage({params: { lang }}: {params: { lang: Locale }}) {
@@ -14,7 +15,7 @@ export default function HomePage({params: { lang }}: {params: { lang: Locale }})
       <Document lang={lang}/>
       <Statistics lang={lang} />
        <Directors lang={lang} />
-      {/* <Funds /> */}
+      <Funds lang={lang}/>
       {/* <Contact />  */}
     </main>
   );

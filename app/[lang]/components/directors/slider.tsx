@@ -42,7 +42,6 @@ function Slider({ directorsData }: SliderProps) {
       window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
-console.log('isMobile', isMobile);
   return (
     <div className="slider-container directors-slider-container free-mode-slider equal-h">
       <div className="swiper directors-slider">
@@ -93,6 +92,7 @@ console.log('isMobile', isMobile);
             </button>
           </div>
         </Swiper>
+          <div className="swiper-pagination mt-4"></div>
       </div>
     </div>
   );
