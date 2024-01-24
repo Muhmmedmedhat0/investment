@@ -1,16 +1,38 @@
-// import { Locale } from '@/i18n/i18n-config';
+"use client";
 import Link from 'next/link';
-// import { getDictionary } from '../../utils/dictionaries';
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
+import { useState, useEffect } from 'react';
 
-export default async function NavBar({ lang }: { lang: Locale }) {
-  const { navigation } = await getDictionary(lang);
-  
+export default function NavBar({ lang }: { lang: Locale }) {
+  const [dictionary, setDictionary] = useState<{ navigation: any } | null>(null);
+  const [small, setSmall] = useState<boolean>(false);
+
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', () => setSmall(window.scrollY > 65));
+      console.log(window.scrollY);
+    }
+    const fetchDictionary = async () => {
+      const result = await getDictionary(lang);
+      setDictionary(result);
+    };
+
+    fetchDictionary();
+  }, [lang]);
+
+  if (!dictionary) {
+    return null;
+  }
+
+  const { navigation } = dictionary;
+
+
   return (
-    <nav className="top-nav" id="navbar">
+    <nav className={`top-nav ${small ? 'scroll' : 'top-nav'}`} id="navbar">
       <div className="container h-100">
         <div className="nav-content">
           <div className="nav-logo">
@@ -24,7 +46,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
               />
             </Link>
           </div>
-          <MobileMenu  navigation={navigation} lang={lang}/>
+          <MobileMenu navigation={navigation} lang={lang} />
         </div>
       </div>
     </nav>
