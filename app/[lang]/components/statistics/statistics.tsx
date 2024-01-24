@@ -39,7 +39,7 @@ export default async function Statistics({ lang }: { lang: Locale }) {
             <div className="col-xl-5 col-lg-6">
               <div className="chart-box">
                 <div className="pie-chart" id="pieChart1">
-                <PieChart {...chartData} />
+                <PieChart {...chartData} lang={lang}/>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default async function Statistics({ lang }: { lang: Locale }) {
             <div className="col-xl-5 col-lg-6 order-lg-1 order-2">
               <div className="chart-box">
                 <div className="pie-chart" id="pieChart2">
-                <PieChart {...chartData2} />
+                <PieChart {...chartData2} lang={lang}/>
                 </div>
               </div>
             </div>

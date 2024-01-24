@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import LocaleSwitcher from './locale-switcher';
+import { Locale } from '@/i18n.config';
 // import { Locale } from '@/i18n/i18n-config';
 
 interface MobileMenuProps {
@@ -13,7 +14,7 @@ interface MobileMenuProps {
     news: string;
     contactUs: string;
   };
-	lang: "en" | "ar"
+	lang: Locale
 }
 function MobileMenu({ navigation , lang}: MobileMenuProps) {
   const [active, setActive] = useState<boolean>(false);
