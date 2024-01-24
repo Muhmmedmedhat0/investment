@@ -5,6 +5,7 @@ import SwiperCore from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination } from 'swiper/modules';
 import DirectorBox from './director-box';
+import { useRef } from 'react';
 
 SwiperCore.use([Pagination, Navigation]);
 interface Director {
@@ -20,20 +21,28 @@ interface SliderProps {
 }
 
 function Slider({ directorsData }: SliderProps) {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 576);
+  const windowSizeRef = useRef<number | undefined>(
+    typeof window !== 'undefined' ? window.innerWidth : undefined
+  );
+
+  const [isMobile, setIsMobile] = useState<boolean>(
+    windowSizeRef.current !== undefined ? windowSizeRef.current < 576 : false
+  );
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 576);
+    const handleWindowResize = () => {
+      const newWindowSize = typeof window !== 'undefined' ? window.innerWidth : undefined;
+      windowSizeRef.current = newWindowSize;
+      setIsMobile(newWindowSize !== undefined ? newWindowSize < 576 : false);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleWindowResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
-
+console.log('isMobile', isMobile);
   return (
     <div className="slider-container directors-slider-container free-mode-slider equal-h">
       <div className="swiper directors-slider">
@@ -71,7 +80,7 @@ function Slider({ directorsData }: SliderProps) {
           }}
         >
           {directorsData.map((director, index) => (
-            <SwiperSlide key={index} className="">
+            <SwiperSlide key={index}>
               <DirectorBox director={director} />
             </SwiperSlide>
           ))}
