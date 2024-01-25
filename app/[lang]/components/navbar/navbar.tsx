@@ -13,8 +13,7 @@ export default function NavBar({ lang }: { lang: Locale }) {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', () => setSmall(window.scrollY > 65));
-      console.log(window.scrollY);
+      window.addEventListener('scroll', () => setSmall(window.scrollY > 0));
     }
     const fetchDictionary = async () => {
       const result = await getDictionary(lang);
