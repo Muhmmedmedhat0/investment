@@ -5,11 +5,8 @@ import { getDictionary } from "@/lib/dictionary";
 
 export default async function Directors({ lang }: { lang: Locale }) {
   const { page } = await getDictionary(lang);
-
-// function Directors() {
   
   return (
-
     <section className="section-style directors-section w-bg  w-mr mb-0" id="directorsSection" style={{ backgroundImage: `url(${'/img/Mask-Director.png'})` }}>
 
       <div className=" directors-area">

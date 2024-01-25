@@ -6,10 +6,6 @@ import { RootLayoutProps } from '@/types/Layout.types';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 
-// import { i18n } from '../../i18n/i18n-config';
-// import { RootLayoutProps } from '@/types/Layout.types';
-// import Navbar from '../components/navbar/navbar';
-// import Footer from '../components/footer/footer';
 
 const almarai = Almarai({
   subsets: ['arabic'],

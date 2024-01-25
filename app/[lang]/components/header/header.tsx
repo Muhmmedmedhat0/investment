@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
-// import { Locale } from '@/i18n/i18n-config';
-// import { getDictionary } from '@/app/utils/dictionaries';
+import { Locale } from '@/i18n.config';
+
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { page } = await getDictionary(lang);

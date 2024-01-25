@@ -169,9 +169,18 @@
             ]
           }
         ]
-      }
-      ,
-      "contact": {},
+      },
+      "contact": {
+        "title": "Contact Us",
+        "form": {
+          "name": "Name",
+          "phone": "Phone Number",
+          "email": "Email",
+          "subject": "Subject",
+          "message": "Message",
+          "submit": "Submit"
+        }
+      },
       "footer": {
         "about": "Investment and Brokerage Company 'Investment Capital'",
         "about1": "Manager of the diversified Eric REIT investment fund.",

@@ -12,7 +12,6 @@ interface DirectorBoxProps {
 	};
 }
 
-// Use the props interface in the function component
 const DirectorBox: React.FC<DirectorBoxProps> = ({ director }) => {
 	return (
 			<div className="director-box box-item">

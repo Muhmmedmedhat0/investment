@@ -2,8 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
-// import { Locale } from '@/i18n/i18n-config';
-// import { getDictionary } from '@/app/utils/dictionaries';
+
 
 export default async function About({ lang }: { lang: Locale }) {
   const { page } = await getDictionary(lang);

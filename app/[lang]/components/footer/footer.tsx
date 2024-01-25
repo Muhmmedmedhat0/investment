@@ -3,13 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
-// import { Locale } from '@/i18n/i18n-config';
-// import { getDictionary } from '@/app/utils/dictionaries';
 
 export default async function Footer({ lang }: { lang: Locale }) {
   const { page } = await getDictionary(lang);
 
-  // function Footer() {
   return (
     <footer className="section-style footer-section w-bg" id="footerSection">
       <div className="footer-area">
